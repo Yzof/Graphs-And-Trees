@@ -41,7 +41,7 @@ def topological_sort(vertices)
     current = top.shift
     sorted << current
 
-    until current.out_edges.empty
+    until current.out_edges.empty?
       edge = current.out_edges.pop
       top << edge.to_vertex if edge.to_vertex.in_edges.length == 1
       edge.destroy!
