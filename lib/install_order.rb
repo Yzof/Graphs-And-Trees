@@ -8,6 +8,7 @@
 # Import any files you need to
 
 require 'graph'
+require 'topological_sort'
 
 def install_order(arr)
   
